@@ -17,7 +17,7 @@ export default class MainScreen extends React.Component {
           <Button full rounded primary
             style={{ marginTop: 30 }}
             onPress={() => this.props.navigation.navigate("GitScreen")}>
-            <Text>Git User list</Text>
+            <Text>Reddit data list</Text>
           </Button>
       </View>
     );
