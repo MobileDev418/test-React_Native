@@ -30,12 +30,12 @@ export default class YtbScreen extends React.Component {
   });
 
   state = {
+    isPlaying: true,
+    isLooping: true,
     isReady: false,
     status: null,
     quality: null,
     error: null,
-    isPlaying: true,
-    isLooping: true,
     duration: 0,
     currentTime: 0,
     fullscreen: false,
@@ -333,13 +333,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     alignSelf: 'center',
   },
-  buttonText: {
-    fontSize: 18,
-    color: 'blue',
-  },
-  buttonTextSmall: {
-    fontSize: 15,
-  },
   instructions: {
     textAlign: 'center',
     color: '#333333',
@@ -349,4 +342,12 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     marginVertical: 10,
   },
+  buttonText: {
+    fontSize: 18,
+    color: 'blue',
+  },
+  buttonTextSmall: {
+    fontSize: 15,
+  },
+  
 });
