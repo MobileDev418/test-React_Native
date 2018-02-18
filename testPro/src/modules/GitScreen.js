@@ -35,7 +35,7 @@ export default class GitScreen extends React.Component {
     componentDidMount(){
         this.fetchData();
     }
-
+ 
     fetchData() {
         fetch(REDDIT_URL)
             .then((response) => {console.log('response', response);
